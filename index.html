@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Gatos</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <!-- Encabezado del blog -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#dudas">Dudas</a></li>
+            </ul>
+        </nav>
+        <h1>🐱</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main>
+        <h1> Blog de Gatos </h1>
+        <!-- Sección de Artículos sobre gatos -->
+        <section id="articulos">
+            <h2>Últimos Artículos</h2>
+            <div id="caja-contener">
+                <a href="articulo1.html" class="articulo-link">
+                    <div class="articulo">
+                        <img src="/imagenes/gato1.png" alt="Gato jugando">
+                        <h3>¿Por qué los gatos amasan?</h3>
+                        <p>Los gatos amasan con sus patas delanteras por instinto...</p>
+                    </div>
+                </a>
+            
+                <a href="articulo2.html" class="articulo-link">
+                    <div class="articulo">
+                        <img src="/imagenes/gato2.png" alt="Gato durmiendo">
+                        <h3>Consejos para alimentar a tu gato</h3>
+                        <p>Una alimentación equilibrada es clave para la salud de tu felino...</p>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
+        
+
+        <!-- Sección de Fotos de gatos -->
+        <section id="galeria">
+            <h2>Galería de Fotos</h2>
+            <div class="fotos">
+                <img src="/imagenes/foto1.JPG" alt="Gato jugando">
+                <img src="/imagenes/foto2.jpg" alt="Gato durmiendo">
+                <img src="/imagenes/foto3.JPG" alt="Gato curioso">
+                <img src="/imagenes/foto4.JPG" alt="Gato curioso">
+            </div>
+        </section>
+
+        <!-- Formulario para dudas sobre gatos -->
+        <section id="dudas">
+            <h2>¿Tienes dudas sobre gatos?</h2>
+            <form action="enviar_duda.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pregunta">Tu duda:</label>
+                <textarea id="pregunta" name="pregunta" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Blog de Gatos | Todos los derechos reservados.</p>
+        <nav>
+            <a href="#">Política de privacidad</a> | 
+            <a href="#">Términos y condiciones</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
