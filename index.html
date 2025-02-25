@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Gatos</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
 
     <!-- Encabezado del blog -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#articulos">Artículos</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#dudas">Dudas</a></li>
+        <nav class="navMenu">
+            <img class="c-nav" id="logo" src="/imagenes/gatito.png" alt="">
+            <ul class="nav-principal">
+                <li><a class="link-menu" href="#">Menu</a></li>
+                <li><a class="link-menu" href="#">Articulos</a></li>
+                <li><a class="link-menu" href="#">Contacto</a></li> 
             </ul>
+            <img class="c-nav icon-nav" src="/imagenes/menu.png" alt="">
         </nav>
-        <h1>🐱</h1>
     </header>
 
-    <!-- Contenedor principal -->
     <main>
         <h1> Blog de Gatos </h1>
         <!-- Sección de Artículos sobre gatos -->
         <section id="articulos">
             <h2>Últimos Artículos</h2>
-            <div id="caja-contener">
+            <div class="caja-contener">
                 <a href="articulo1.html" class="articulo-link">
                     <div class="articulo">
                         <img src="/imagenes/gato1.png" alt="Gato jugando">
@@ -45,10 +45,9 @@
                 </a>
             </div>
             
-        </section>
+
         
 
-        <!-- Sección de Fotos de gatos -->
         <section id="galeria">
             <h2>Galería de Fotos</h2>
             <div class="fotos">
@@ -59,10 +58,12 @@
             </div>
         </section>
 
-        <!-- Formulario para dudas sobre gatos -->
-        <section id="dudas">
-            <h2>¿Tienes dudas sobre gatos?</h2>
-            <form action="enviar_duda.php" method="POST">
+         
+            
+    </main>
+    <div class="formulario">
+        <h2>¿Tienes dudas sobre gatos?</h2>
+            <form action="/enviar_duda" method="POST">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -74,18 +75,24 @@
 
                 <button type="submit">Enviar</button>
             </form>
-        </section>
+    </div> 
 
-    </main>
-
-    <!-- Pie de página -->
-    <footer>
-        <p>© 2025 Blog de Gatos | Todos los derechos reservados.</p>
-        <nav>
-            <a href="#">Política de privacidad</a> | 
-            <a href="#">Términos y condiciones</a>
-        </nav>
-    </footer>
-
+    <footer id="inf-revista">
+        <p>Síguenos en:</p>
+        <div class="box-redes">
+            <div>
+                <img src="/imagenes/redes/signo-de-github.png" alt="">
+                <a target="_blank" href="https://github.com/nanr99">Github</a> </div>
+            <div>
+                <img src="/imagenes/redes/gorjeo.png" alt="">
+                <a target="_blank" href="https://twitter.com/ejemplo">Twitter</a> 
+            </div>
+            <div>
+                <img src="/imagenes/redes/instagram.png" alt="">
+                <a target="_blank" href="https://www.instagram.com/nan_rd3?igsh=MmRoanV5ZXJrc3M4&utm_source=qr">Instagram</a>
+            </div>
+         </div>
+    </footer> 
+    <link rel="stylesheet" href="/script/nav.js">
 </body>
 </html>

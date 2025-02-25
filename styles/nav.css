@@ -1,0 +1,105 @@
+/*Menu navegador pagina*/
+.c-nav{
+    width: 50px;
+    height:50px ;
+}
+header {
+    background: #192a51;
+    padding:15px;
+    grid-area: header;
+    position: sticky;
+    top:0;
+    z-index:1000;
+
+}
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #192a51;
+}
+.icon-nav{
+    display: block;
+}
+.nav-principal {
+    list-style: none;
+    display: none; /* Se oculta por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #192a51;
+    width: 100%;
+    text-align: center;
+}
+.nav-principal.active {
+    display: flex;
+}
+.nav-principal >.c-nav > ul {
+    width: 100% ;
+    height: 30px;
+}
+.link-menu:hover, .box-redes a:hover{
+
+    background-color: blue;
+    text-decoration: underline orange;
+}
+.nav-principal li {
+    margin: 20px 25px;
+
+}
+.link-menu {
+    text-align:center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+p, a{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 20px;
+}
+
+.box-redes img{
+    width: 30px;
+    height: 30px;
+}
+.box-redes{
+    margin: 40px;
+}
+.box-redes div {
+    margin: 10px 0;
+}
+#inf-revista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: footer;
+    background-color: #192a51;
+    width: 100%;
+    height: 175px;
+}
+@media (min-width:1200px) {
+    .icon-nav{
+        display: none;
+    }
+    .navMenu{
+        position: relative;
+    }
+    .nav-principal {
+        display: flex; /* Se oculta por defecto */
+        flex-direction: row;
+        position: relative;
+        top: 0; 
+        left: 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
